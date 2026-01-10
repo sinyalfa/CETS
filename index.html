@@ -10,7 +10,6 @@
     --primary: #1d4ed8;
     --success: #16a34a;
     --email: #7c3aed;
-    --schedule: #2563eb;
     --bg: #f4f6f8;
     --text-dark: #1f2933;
     --text-light: #4b5563;
@@ -31,7 +30,7 @@ body {
 
 .card {
     background: #ffffff;
-    max-width: 420px;
+    max-width: 440px;
     width: 100%;
     padding: 28px;
     border-radius: 14px;
@@ -102,18 +101,15 @@ body {
     border-radius: 10px;
     font-weight: bold;
     font-size: 16px;
-    transition: transform 0.15s ease, opacity 0.15s ease;
-}
-
-.buttons a:hover {
-    transform: translateY(-1px);
-    opacity: 0.95;
 }
 
 .call { background: var(--primary); }
 .text { background: var(--success); }
 .email { background: var(--email); }
-.schedule { background: var(--schedule); }
+
+.booking {
+    margin-top: 22px;
+}
 
 .footer {
     margin-top: 18px;
@@ -165,23 +161,24 @@ body {
     </div>
 
     <div class="notice">
-        📌 Tax Season Appointments Filling Fast — Book Online Below
+        📌 Book your appointment instantly below
     </div>
 
     <div class="buttons">
         <a href="tel:16145991185" class="call">📞 Call Now</a>
         <a href="sms:16145991185" class="text">💬 Text Us</a>
         <a href="mailto:Columbuseast.taxservices@outlook.com" class="email">✉️ Email Us</a>
+    </div>
 
-        <a href="https://app.squareup.com/appointments/book/n1hv6ra71g450r/J1D59GVJ35MW7/start"
-           target="_blank"
-           class="schedule">
-            📅 Book Appointment (Square)
-        </a>
+    <!-- ✅ Square Appointments Embedded -->
+    <div class="booking">
+        <!-- Start Square Appointments Embed Code -->
+        <script src="https://square.site/appointments/buyer/widget/n1hv6ra71g450r/J1D59GVJ35MW7.js"></script>
+        <!-- End Square Appointments Embed Code -->
     </div>
 
     <div class="footer">
-        Call, text, email, or book instantly online
+        Call, text, email, or book your appointment online
     </div>
 
 </div>
