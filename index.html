@@ -7,179 +7,183 @@
 
 <style>
 :root {
-    --primary: #1d4ed8;
-    --success: #16a34a;
-    --email: #7c3aed;
-    --bg: #f4f6f8;
-    --text-dark: #1f2933;
-    --text-light: #4b5563;
+  --primary: #1d4ed8;
+  --success: #16a34a;
+  --email: #7c3aed;
+  --schedule: #0f766e;
+  --bg: #f4f6f8;
+  --text-dark: #1f2933;
+  --text-light: #4b5563;
 }
 
 * { box-sizing: border-box; }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: var(--bg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 16px;
 }
 
 .card {
-    background: #ffffff;
-    max-width: 440px;
-    width: 100%;
-    padding: 28px;
-    border-radius: 14px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-    text-align: center;
+  background: #ffffff;
+  max-width: 420px;
+  width: 100%;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  text-align: center;
 }
 
 .logo {
-    font-size: 26px;
-    font-weight: bold;
-    color: var(--text-dark);
+  font-size: 26px;
+  font-weight: bold;
+  color: var(--text-dark);
 }
 
 .tagline {
-    font-size: 14px;
-    color: var(--text-light);
-    margin-top: 4px;
+  font-size: 14px;
+  color: var(--text-light);
+  margin-top: 4px;
 }
 
 .section {
-    margin-top: 18px;
-    font-size: 16px;
-    color: var(--text-light);
+  margin-top: 18px;
+  font-size: 16px;
+  color: var(--text-light);
 }
 
 .section strong {
-    color: var(--text-dark);
+  color: var(--text-dark);
 }
 
 .services {
-    text-align: left;
-    margin-top: 18px;
-    background: #f9fafb;
-    padding: 16px;
-    border-radius: 10px;
-    font-size: 15px;
+  text-align: left;
+  margin-top: 18px;
+  background: #f9fafb;
+  padding: 16px;
+  border-radius: 10px;
+  font-size: 15px;
 }
 
 .services ul {
-    padding-left: 18px;
-    margin: 8px 0 0 0;
+  padding-left: 18px;
+  margin: 8px 0 0 0;
 }
 
 .services li {
-    margin-bottom: 7px;
+  margin-bottom: 7px;
 }
 
 .notice {
-    background: #eef2ff;
-    color: #1e40af;
-    padding: 10px;
-    border-radius: 8px;
-    font-size: 14px;
-    margin-top: 16px;
+  background: #eef2ff;
+  color: #1e40af;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-top: 16px;
 }
 
 .buttons {
-    margin-top: 22px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .buttons a {
-    text-decoration: none;
-    color: #fff;
-    padding: 14px;
-    border-radius: 10px;
-    font-weight: bold;
-    font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  padding: 14px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.buttons a:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
 }
 
 .call { background: var(--primary); }
 .text { background: var(--success); }
 .email { background: var(--email); }
-
-.booking {
-    margin-top: 22px;
-}
+.schedule { background: var(--schedule); }
 
 .footer {
-    margin-top: 18px;
-    font-size: 13px;
-    color: #6b7280;
+  margin-top: 18px;
+  font-size: 13px;
+  color: #6b7280;
 }
 </style>
 </head>
 
 <body>
 
-<div class="card" role="main" aria-label="Columbus East Tax Services contact card">
+<div class="card" role="main" aria-label="Columbus East Tax Services Digital Card">
 
-    <div class="logo">Columbus East Tax Services</div>
-    <div class="tagline">Professional • Reliable • Local</div>
+  <div class="logo">Columbus East Tax Services</div>
+  <div class="tagline">Professional • Reliable • Local</div>
 
-    <div class="section">
-        📍 Columbus, Ohio 43227
-    </div>
+  <div class="section">
+    📍 Columbus, Ohio 43227
+  </div>
 
-    <div class="section">
-        📞 <a href="tel:16145991185">614-599-1185</a><br>
-        📞 <a href="tel:16142597625">614-259-7625</a>
-    </div>
+  <div class="section">
+    📞 <a href="tel:16145991185">614-599-1185</a><br>
+    📞 <a href="tel:16142597625">614-259-7625</a>
+  </div>
 
-    <div class="section">
-        ✉️ <a href="mailto:Columbuseast.taxservices@outlook.com">
-        Columbuseast.taxservices@outlook.com</a>
-    </div>
+  <div class="section">
+    ✉️ <a href="mailto:Columbuseast.taxservices@outlook.com">
+    Columbuseast.taxservices@outlook.com</a>
+  </div>
 
-    <div class="section">
-        <strong>Business Hours</strong><br>
-        Mon – Fri: 9:00 AM – 6:00 PM<br>
-        Sat: By Appointment<br>
-        Sun: Closed
-    </div>
+  <div class="section">
+    <strong>Business Hours</strong><br>
+    Mon – Fri: 9:00 AM – 6:00 PM<br>
+    Sat: By Appointment<br>
+    Sun: Closed
+  </div>
 
-    <div class="services">
-        <strong>Services Offered</strong>
-        <ul>
-            <li>✔️ W-2 & Individual Tax Returns</li>
-            <li>✔️ 1099 & Self-Employed Taxes</li>
-            <li>✔️ LLC & Small Business Tax Filing</li>
-            <li>✔️ Schedule C & Business Deductions</li>
-            <li>✔️ Audit Assistance & IRS Letters</li>
-            <li>✔️ Amendments (1040-X)</li>
-            <li>✔️ Tax Planning & Consulting</li>
-        </ul>
-    </div>
+  <div class="services">
+    <strong>Services Offered</strong>
+    <ul>
+      <li>✔️ W-2 & Individual Tax Returns</li>
+      <li>✔️ 1099 & Self-Employed Taxes</li>
+      <li>✔️ LLC & Small Business Filing</li>
+      <li>✔️ Schedule C & Deductions</li>
+      <li>✔️ Audit Help & IRS Letters</li>
+      <li>✔️ Amendments (1040-X)</li>
+      <li>✔️ Tax Planning</li>
+    </ul>
+  </div>
 
-    <div class="notice">
-        📌 Book your appointment instantly below
-    </div>
+  <div class="notice">
+    📌 Book online using our secure scheduling portal
+  </div>
 
-    <div class="buttons">
-        <a href="tel:16145991185" class="call">📞 Call Now</a>
-        <a href="sms:16145991185" class="text">💬 Text Us</a>
-        <a href="mailto:Columbuseast.taxservices@outlook.com" class="email">✉️ Email Us</a>
-    </div>
+  <div class="buttons">
+    <a href="tel:16145991185" class="call">📞 Call Now</a>
+    <a href="sms:16145991185" class="text">💬 Text Us</a>
+    <a href="mailto:Columbuseast.taxservices@outlook.com" class="email">✉️ Email Us</a>
 
-    <!-- ✅ Square Appointments Embedded -->
-    <div class="booking">
-        <!-- Start Square Appointments Embed Code -->
-        <script src="https://square.site/appointments/buyer/widget/n1hv6ra71g450r/J1D59GVJ35MW7.js"></script>
-        <!-- End Square Appointments Embed Code -->
-    </div>
+    <!-- ✅ YOUR LIVE GITHUB BOOKING LINK -->
+    <a href="https://sinyalfa.github.io/booking-portal/"
+       target="_blank"
+       class="schedule">
+      📅 Book Appointment Online
+    </a>
+  </div>
 
-    <div class="footer">
-        Call, text, email, or book your appointment online
-    </div>
+  <div class="footer">
+    Call, text, email, or book online
+  </div>
 
 </div>
 
